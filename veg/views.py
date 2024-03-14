@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.htpp import Httpresponse
 from .models import *
 from veg.models import Recipe
 from django.contrib.auth.models import User
@@ -9,7 +10,8 @@ from django.shortcuts import render
 
 
 # Ensure the model name is capitalized and matches the model in your models.py
-
+def pratik(request):
+    return Httpresponse('hello pratik')
 def recipe(request):
     if request.method == "POST":
         data = request.POST
