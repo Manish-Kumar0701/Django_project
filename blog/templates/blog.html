@@ -1,0 +1,12 @@
+
+{% extends "index.html" %}
+{% block content %}
+
+
+{{queryset}}
+<div class="">New Blog</div>
+{% for i in queryset %}
+<div class="">{{i.title}}</div>
+
+{% endfor %}
+{% endblock %}
